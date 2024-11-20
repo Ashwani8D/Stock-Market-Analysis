@@ -1,0 +1,70 @@
+Stock Market Analysis Web Application
+A web-based stock market analysis platform that provides interactive charts, financial data, and stock performance summaries for major companies. This application fetches data dynamically from an API and allows users to explore various time ranges, such as 1 month, 3 months, 1 year, and 5 years.
+
+Features
+Interactive Stock Charts: View dynamic stock performance charts for selected companies.
+Time Range Selection: Analyze stock trends over different periods (1 month, 3 months, 1 year, and 5 years).
+Company Summary and Stats: Get detailed information about book value, profit percentage, and a summary of the company.
+Stock List Navigation: Quickly switch between popular stocks like AAPL, MSFT, TSLA, and more.
+Responsive Design: Optimized for various devices with intuitive navigation and data visualization.
+Technologies Used
+Frontend: HTML, CSS, JavaScript
+Canvas: Custom chart drawing using the <canvas> element for smooth and responsive visualizations.
+Backend API: Data is fetched from a REST API hosted at https://stocksapi-uhe1.onrender.com.
+Installation
+Clone the Repository
+
+bash
+Copy code
+git clone https://github.com/yourusername/stock-market-analysis.git
+cd stock-market-analysis
+Install Dependencies Ensure you have a working internet connection for fetching API data. No additional dependencies are required for this project.
+
+Run the Application Open the index.html file in your web browser:
+
+bash
+Copy code
+open index.html
+Project Structure
+bash
+Copy code
+├── index.html           # Main HTML file
+├── style1.css           # Stylesheet for the project
+├── list.js              # JavaScript for handling stock list and interactivity
+├── README.md            # Project documentation
+API Details
+Stocks Data Endpoint:
+
+bash
+Copy code
+https://stocksapi-uhe1.onrender.com/api/stocks/getstocksdata
+Returns stock chart data, including timestamps and values.
+
+Stock Stats Endpoint:
+
+bash
+Copy code
+https://stocksapi-uhe1.onrender.com/api/stocks/getstockstatsdata
+Provides stats such as book value and profit percentage.
+
+Stocks Profile Data:
+
+bash
+Copy code
+https://stocksapi-uhe1.onrender.com/api/stocks/getstocksprofiledata
+Contains the company summary.
+
+How to Use
+Open the application in your browser.
+Select a stock from the list on the right side.
+Use the buttons below the chart to view performance across different time ranges.
+Hover over the chart to view detailed data for specific dates.
+Explore the company stats and summaries displayed below the chart.
+Contributing
+Contributions are welcome! Please fork the repository, make changes, and submit a pull request.
+
+License
+This project is licensed under the MIT License.
+
+Author
+Developed by Ashwani Verma
